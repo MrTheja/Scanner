@@ -110,6 +110,6 @@ with tempfile.TemporaryDirectory() as tempdir:
     for n in o_name:
         pdf.add_page()
         pdf.image(n,0,0,0,0)
-    os.chdir('/home/thejus/Documents/Project')
+    os.chdir(loc)
     pdf.output('pd.pdf')
 cv2.destroyAllWindows()
