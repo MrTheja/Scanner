@@ -102,7 +102,7 @@ with tempfile.TemporaryDirectory() as tempdir:
     os.chdir(tempdir)
     o_name=[]
     for i,img in enumerate(out):
-        n='temp'+str(i)+'.jpg'
+        n='temp'+str(i)+'.png'
         print(n,os.getcwd())
         cv2.imwrite(n, img)
         o_name.append(n)
